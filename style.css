@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+
+:root{
+    --red-0: #540B0E;
+    --red-1: #6B0F1A;
+    --red-2: #941C2F;
+    --red-3: #9E2A2B;
+    --red-4: #8F2D56;
+    --red-5: #A53860;
+    --red-6: #D81159;
+    --red-7: #D90429;
+
+    --white-0: #FFFBFA;
+    --white-1: #EDF2F4;
+    --white-2: #F4F2F3;
+    --white-3: #ECEBF3;
+
+
+    --black-0: #0C120C;
+    --black-1: #2B2D42;
+    --black-2: #464655;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 1.2rem;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+.header__nav{
+    background-color: var(--black-0);
+    color: var(--white-0);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.header__nav a{
+    color: var(--white-0);
+    text-decoration: none;
+    padding: .9rem;
+}
+.header__hero{
+    background-color: var(--white-2);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.header__hero__title {
+    grid-column: 2 / 7;
+}
+.header__hero__title__text{
+    position: relative;
+    padding: 2rem;
+    font-size: 3rem;
+}
+.header__hero__title__text__bg {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 10rem;
+    height: 20rem;
+    background-color: var(--red-1);
+
+}
+
+.header__hero__text {
+    grid-column: 7 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
