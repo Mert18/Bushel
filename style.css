@@ -33,6 +33,7 @@
 body {
     font-size: 62.5%;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--white-2);
 }
 
 .container {
@@ -59,7 +60,6 @@ body {
     padding: .9rem;
 }
 .header__hero{
-    background-color: var(--white-2);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -87,4 +87,19 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.products {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.product {
+    grid-column: 2 / 12;
 }
